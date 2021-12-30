@@ -1,0 +1,66 @@
+package File;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Department {
+    public static ArrayList<String> ListOfCheckBoxes(){
+       ArrayList<String>  checklist = new ArrayList<String>();
+       checklist.add("Amazon Devices");
+       checklist.add("Arts, Crafts & Sewing");
+       checklist.add("Automotive & Motorcycle");
+       checklist.add("Baby");
+       checklist.add("Baby Clothing & Accessories");
+       checklist.add("Beauty");
+       checklist.add("Books");
+       checklist.add("Boys’ Fashion");
+       checklist.add("Camera & Photo");
+       checklist.add("Cell Phones & Accessories");
+       checklist.add("Computers & Accessories");
+       checklist.add("Costumes & Accessories");
+       checklist.add("Electronics");
+       checklist.add("Everything Else");
+        checklist.add("Fashion");
+        checklist.add("Furniture");
+        checklist.add("Girls’ Fashion");
+        checklist.add("Grocery");
+        checklist.add("Headphones");
+        checklist.add("Health & Personal Care");
+        checklist.add("Home");
+        checklist.add("Home Audio");
+        checklist.add("Home Improvement");
+        checklist.add("Industrial & Scientific");
+        checklist.add("Kindle");
+        checklist.add("Kindle eBooks");
+        checklist.add("Kitchen");
+        checklist.add("Luggage Travel Gear");
+        checklist.add("Magazines");
+        checklist.add("Major Appliances");
+        checklist.add("Men's Shoes");
+        checklist.add("Men's Watches");
+        checklist.add("Men’s Clothing");
+        checklist.add("Men’s Fashion");
+        checklist.add("Movies & TV");
+        checklist.add("Music");
+        checklist.add("Musical Instruments");
+        checklist.add("Office Electronics & Supplies");
+        checklist.add("Patio, Lawn & Garden");
+        checklist.add("Pet Supplies");
+        checklist.add("Power & Hand Tools");
+        checklist.add("Software");
+        checklist.add("Sports & Outdoors");
+        checklist.add("Television & Video");
+        checklist.add("Toys & Games");
+        checklist.add("Video Games");
+        checklist.add("Women's Shoes");
+        checklist.add("Women's Watches");
+        checklist.add("Women’s Clothing");
+        checklist.add("Women’s Fashion");
+        checklist.add("Women’s Jewelry");
+        checklist.add("new box");
+        checklist.add("Set box");
+        return checklist;
+}
+
+
+}

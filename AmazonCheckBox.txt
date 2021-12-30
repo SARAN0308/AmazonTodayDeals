@@ -1,0 +1,45 @@
+package File;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class CheckBox extends Department{
+
+    static WebDriver driver = null;
+
+    public void openBrowser() {
+        WebDriverManager.chromedriver().setup();
+        driver = new ChromeDriver();
+        driver.manage().window().maximize();
+        driver.get("https://www.amazon.com");
+        driver.findElement(By.xpath("//a[contains(text(),\"Today's Deals\")]")).click();
+    }
+
+    public void isElementPresent() {
+
+        for (String item : ListOfCheckBoxes()) {
+
+            try {
+               WebElement isPresent = driver.findElement(By.xpath("//input[@type='checkbox']//following-sibling::span[text()= \"" + item + "\"]"));
+
+                if (isPresent.isDisplayed()) {
+                    System.out.println(item + " item is present in the particular checkbox");
+                }
+            } catch (NoSuchElementException Exception) {
+                System.out.println(item + " item is not present in the checkbox");
+            }
+        } }
+    public void closeBrowser(){
+
+        driver.quit();
+    }
+    public static void main(String[] args) {
+        CheckBox method = new CheckBox();
+        method.openBrowser();
+        method.isElementPresent();
+        method.closeBrowser();
+}}
